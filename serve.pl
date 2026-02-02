@@ -12,7 +12,7 @@ use Time::HiRes qw(sleep);
 # ======================
 my $PORT        = 9001;
 my $HOST        = '0.0.0.0';
-my $WEB_ROOT    = $ARGV[0] // File::Spec->catdir(dirname(__FILE__), 'src');
+my $WEB_ROOT    = $ARGV[0] // File::Spec->catdir(dirname(__FILE__), '.');
 
 my $INDEX_FILE  = File::Spec->catfile($WEB_ROOT, 'index.html');
 
