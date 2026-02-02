@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stimer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" style="position:fixed;inset:0;z-index:0;"></canvas>
+  <div class="container">
+    <h1>Timer</h1>
+    <div class="timer" id="display">00:00</div>
+
+    <div class="controls">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="set-time">
+      <p>Set time (minutes)</p>
+      <input type="number" id="minutesInput" min="1" value="1" />
+    </div>
+  </div>
+  
+  <script src="background.js"></script>
+  <script src="foreground.js"></script>
+</body>
+</html>
